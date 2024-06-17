@@ -8,11 +8,11 @@ import (
 
 var (
 	dbConn *sql.DB
-	err error
+	err    error
 )
 
 func init() {
-	dbConn, err := sql.Open("mysql", "root:123456!@#@tcp(192.168.118.26:3306)/Tables_in_video_server?charset=utf8")
+	dbConn, err = sql.Open("mysql", "root:123456@tcp(192.168.118.26:3306)/Tables_in_video_server")
 	if err != nil {
 		panic(err.Error())
 	}

@@ -9,3 +9,5 @@ go env | grep GOPROXY
 go build
 
 api.exe
+
+cd 到指定test 目录用 go test -v
